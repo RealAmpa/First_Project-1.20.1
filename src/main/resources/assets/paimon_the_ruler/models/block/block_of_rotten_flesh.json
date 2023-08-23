@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "paimon_the_ruler:block/block_of_rotten_flesh"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "item.paimon_the_ruler.blood_bottle" : "Blood Bottle",
+  "item.paimon_the_ruler.human_flesh" : "Human Flesh",
+
+  "block.paimon_the_ruler.block_of_rotten_flesh" : "Block of Rotten Flesh",
+  "block.paimon_the_ruler.block_of_living_rotten_flesh" : "Block of Living Rotten Flesh",
+
+  "creativetab.paimon_the_ruler_creative_tab" : "Paimon The Ruler"
+}
