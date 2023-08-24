@@ -10,6 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, PaimonTheRuler.MOD_ID);
+    public static final RegistryObject<Item> DRIED_BLOOD = ITEMS.register("dried_blood",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BLOOD_BOTTLE = ITEMS.register("blood_bottle",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUMAN_FLESH = ITEMS.register("human_flesh",

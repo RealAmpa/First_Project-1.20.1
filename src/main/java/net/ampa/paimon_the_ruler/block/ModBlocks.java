@@ -6,7 +6,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +22,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD)));
     public static final RegistryObject<Block> BLOCK_OF_LIVING_ROTTEN_FLESH = registerBlock("block_of_living_rotten_flesh",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD)));
+    public static final RegistryObject<Block> BLOOD_ORE = registerBlock("blood_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    //should drop dried blood the with brwing stand -> blood bottle
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "iron_ingot",
+  "ingredients": [
+    {
+      "item": "paimon_the_ruler:block_of_rotten_flesh"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:rotten_flesh"
+  }
+}

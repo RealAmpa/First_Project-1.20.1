@@ -22,11 +22,13 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BLOOD_BOTTLE.get());
                         pOutput.accept(ModItems.HUMAN_FLESH.get());
+                        pOutput.accept(ModItems.DRIED_BLOOD.get());
 
                         pOutput.accept(Items.DIAMOND);
 
                         pOutput.accept(ModBlocks.BLOCK_OF_ROTTEN_FLESH.get());
                         pOutput.accept(ModBlocks.BLOCK_OF_LIVING_ROTTEN_FLESH.get());
+                        pOutput.accept(ModBlocks.BLOOD_ORE.get());
 
                     })
                     .build());

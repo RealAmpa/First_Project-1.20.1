@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "paimon_the_ruler:block_of_living_rotten_flesh"
+  },
+  "show_notification": true
+}
