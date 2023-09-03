@@ -2,10 +2,14 @@ package net.ampa.paimon_the_ruler.block;
 
 import net.ampa.paimon_the_ruler.PaimonTheRuler;
 import net.ampa.paimon_the_ruler.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ExperienceBottleItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,12 +23,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PaimonTheRuler.MOD_ID);
 
     public static final RegistryObject<Block> BLOCK_OF_ROTTEN_FLESH = registerBlock("block_of_rotten_flesh",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.MUD)));
     public static final RegistryObject<Block> BLOCK_OF_LIVING_ROTTEN_FLESH = registerBlock("block_of_living_rotten_flesh",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.MUD)));
     public static final RegistryObject<Block> BLOOD_ORE = registerBlock("blood_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
-    //should drop dried blood the with brwing stand -> blood bottle
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+                    .strength(3.8f).sound(SoundType.SOUL_SAND), UniformInt.of(4, 8)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
