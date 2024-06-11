@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "paimon_the_ruler:block/blood_ore"
-  }
-}

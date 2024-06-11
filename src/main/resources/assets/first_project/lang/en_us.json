@@ -1,0 +1,23 @@
+{
+  "item.first_project.raw_uranium": "Raw Uranium",
+  "item.first_project.uranium_ingot": "Uranium Ingot",
+  "item.first_project.replacer": "Replacer",
+  "item.first_project.uranium_detector": "Uranium Detector",
+  "item.first_project.uranium_replacer": "Uranium Replacer",
+  "item.first_project.diesel_bucket": "Diesel Bucket",
+  "item.first_project.remote_control": "Remote Control",
+
+
+  "block.first_project.uranium_ore": "Uranium Ore",
+  "block.first_project.deepslate_uranium_ore": "Deepslate Uranium Ore",
+  "block.first_project.block_of_uranium": "Block Of Uranium",
+  "block.first_project.miner": "Miner",
+  "block.first_project.land_mine": "Land Mine",
+  "block.first_project.zircon_lamp": "Zircon Lamp",
+  "block.first_project.energy_detector": "Energy Detector",
+
+  "tooltip.first_project.uranium_detector" : "§kHello §1Abi",
+  "tooltip.first_project.miner" : "With enough Energy this machine can mine the block above it even if its Bedrock!",
+
+  "creativetab.first_project_creative_tab" : "First Project Creative Tab"
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "level=0": { "model": "first_project:block/energy_detector_level_0" },
+    "level=5": { "model": "first_project:block/energy_detector_level_5" }
+  }
+}
